@@ -1,0 +1,45 @@
+html {
+	background-color:#F0F0F0;
+	padding: 20px;
+	font-family: "Lato", sans-serif;
+}
+#page {
+	margin: 0 auto;
+}
+.name {
+	padding-left: 20px;
+	letter-spacing: 2px;
+	font-size: 90px;
+	color:#00003D; 
+}
+.Header {
+	padding-left: 20px;
+	padding-bottom: 20px;
+	box-sizing: border-box;
+	float: left;
+	width: 50%;
+	letter-spacing: 0.5px;
+	font-size: 23px;
+	color:#2B344D;
+}
+#links {
+	letter-spacing: 0.5px;
+	font-size: 25px;
+	color:#2B344D;
+	width: 35%;
+	float: right;
+}
+ul, li {
+	list-style-type: none;
+	list-style: none;
+}
+a {
+	text-decoration: none;
+	color:#39393b;
+}
+a:active {
+	color:#EE5555;
+}
+a:hover {
+	color:#EE5555;
+}

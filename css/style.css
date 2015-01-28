@@ -1,0 +1,36 @@
+html {
+	background-color:#F0F0F0;
+	padding: 20px;
+	font-family: "Lato", sans-serif;
+}
+p {
+	font-size: 20px;
+}
+#page {
+	margin: 0 auto;
+}
+.name {
+	padding-left: 20px;
+	letter-spacing: 2px;
+	font-size: 50px;
+	color:#00003D; 
+}
+.contact {
+	padding-left: 20px;
+	font-size: 20px;
+	color:#00003D; 
+}
+ul, li {
+	list-style-type: none;
+	list-style: none;
+}
+a {
+	text-decoration: none;
+	color:#39393b;
+}
+a:active {
+	color:#EE5555;
+}
+a:hover {
+	color:#EE5555;
+}
