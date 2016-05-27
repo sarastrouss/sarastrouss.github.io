@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Sara Strouss</title>
+    <description>UX Portfolio</description>
+    <link>http://sarastrouss.me/</link>
+    <atom:link href="http://sarastrouss.me/feed.xml" rel="self" type="application/rss+xml" />
+    
+      <item>
+        <title>Programming Dashboard 2.0</title>
+        <description>&lt;p&gt;&lt;b&gt;Problem&lt;/b&gt;: The current music director system at WREK Atlanta is not user friendly. After working with the system myself, and discussing some of the usability issues with other music directors, I decided to take on the project as my senior design project. I worked with two other people and I was responsible for the &lt;b&gt;front-end development&lt;/b&gt;. I used &lt;b&gt; Ruby on Rails&lt;/b&gt;, &lt;b&gt;d3.js&lt;/b&gt;, and &lt;b&gt;Bootstrap&lt;/b&gt;.&lt;/p&gt;
+
+&lt;p&gt;Some of the key issues users noted:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Unable to delete an album/track&lt;/li&gt;
+  &lt;li&gt;Adding a track is confusing&lt;/li&gt;
+  &lt;li&gt;Finding the correct record label isn’t easy&lt;/li&gt;
+  &lt;li&gt;Can’t share albums with other users&lt;/li&gt;
+  &lt;li&gt;Can’t mark a track obscene&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;b&gt;Previous System&lt;/b&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/program_menu.png&quot; alt=&quot;program_menu&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Very messy menu system that with confusing wording. Add albums vs add incoming album, for example, can often lead a user to add an album directly to the database to be programmed whereas adding an incoming album sends it to the audition phase.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/programming_case.png&quot; alt=&quot;program_case&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Example of what users do in order to mark a track as obscene. However, due to the track still eventually showing up to the on-air DJ, it is possible for them to both play this track and announce it on air as if “Obscene Do Not Play” is the track title.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/add_album_old.png&quot; alt=&quot;addAlbum&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;The most difficult issue we saw users encounter with adding an album was dealing with the record label input. A lot of the albums sent to WREK Atlanta are self-released and do not belong to a label.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/add_tracks_old.png&quot; alt=&quot;addTracks&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Programming an album for airplay can take a lot of time. Adding the track metadata individually just adds to the time. We felt that it was possible to make this process a little easier.&lt;/p&gt;
+
+&lt;p&gt;&lt;b&gt;Process&lt;/b&gt;&lt;/p&gt;
+
+&lt;p&gt;Features:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Tracks can be marked obscene&lt;/li&gt;
+  &lt;li&gt;Automation and online listener data is displayed in order to allow users to make more informed programming decisions&lt;/li&gt;
+  &lt;li&gt;Menu follows user&lt;/li&gt;
+  &lt;li&gt;FAQ Page for new users&lt;/li&gt;
+  &lt;li&gt;Clear feedback to user when an action is taken&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;The initial design worked off of a grid system and would display all album artwork for incoming albums instead of a list. However, we found that due to the nature of some of the albums sent to WREK Atlanta, finding the album artwork through existing databases impossible.
+&lt;img src=&quot;/images/Wireframe-PD.png&quot; alt=&quot;wireframe-pd&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;b&gt;Proposed Solution&lt;/b&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;u&gt;Home Page&lt;/u&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;b&gt;What we updated:&lt;/b&gt; Instead of seeing a list of albums to be programmed, the user sees real-time data related to the number of online listeners and automation usage. Hovering over each cell in the heatmap shows the user the number of online listeners and the show for a given hour.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/home_page_PD.png&quot; alt=&quot;home_page&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;u&gt;Add An Album&lt;/u&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;b&gt;What we updated:&lt;/b&gt; The biggest change for adding an album was changing the input type for the record label. Instead of creating and maintaining a list of record labels, the user inputs one into a text field and if that record label already exists, it will auto-fill. We also added a field for the user to add a Spotify URL if one exists. This feature would become available in a later version of the WREK online playlist.&lt;/p&gt;
+
+&lt;p&gt;&lt;u&gt;Add New Track&lt;/u&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;b&gt;What we updated:&lt;/b&gt; The biggest change for adding a new track was the addition of an explicit field. If a track is marked explicit, that particular track will be blocked out in red indicating to the on-air DJ not to play that track. In addition, a frequency field was added to each track for automation purposes.&lt;/p&gt;
+
+&lt;p&gt;&lt;u&gt;Feedback, Search, and Help&lt;/u&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;b&gt;What we updated:&lt;/b&gt; We added feedback for the user whenever an action was taken. We also included filtering search for programmed albums and incoming albums. We also included a simple FAQ page for new users.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/Feedback-PD.png&quot; alt=&quot;new_album&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/Help-PD.png&quot; alt=&quot;wireframe-pd&quot; /&gt;&lt;/p&gt;
+
+</description>
+        <pubDate>Wed, 09 Dec 2015 00:00:00 -0800</pubDate>
+        <link>http://sarastrouss.me/development/2015/12/09/oh-hi-there/</link>
+        <guid isPermaLink="true">http://sarastrouss.me/development/2015/12/09/oh-hi-there/</guid>
+      </item>
+    
+      <item>
+        <title>Programming Dashboard 2.0</title>
+        <description>&lt;p&gt;&lt;b&gt;Problem&lt;/b&gt;: The current music director system at WREK Atlanta is not user friendly. After working with the system myself, and discussing some of the usability issues with other music directors, I decided to take on the project as my senior design project. I worked with two other people and I was responsible for the &lt;b&gt;front-end development&lt;/b&gt;. I used &lt;b&gt; Ruby on Rails&lt;/b&gt;, &lt;b&gt;d3.js&lt;/b&gt;, and &lt;b&gt;Bootstrap&lt;/b&gt;.&lt;/p&gt;
+
+&lt;p&gt;Some of the key issues users noted:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Unable to delete an album/track&lt;/li&gt;
+  &lt;li&gt;Adding a track is confusing&lt;/li&gt;
+  &lt;li&gt;Finding the correct record label isn’t easy&lt;/li&gt;
+  &lt;li&gt;Can’t share albums with other users&lt;/li&gt;
+  &lt;li&gt;Can’t mark a track obscene&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;b&gt;Previous System&lt;/b&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/program_menu.png&quot; alt=&quot;program_menu&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Very messy menu system that with confusing wording. Add albums vs add incoming album, for example, can often lead a user to add an album directly to the database to be programmed whereas adding an incoming album sends it to the audition phase.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/programming_case.png&quot; alt=&quot;program_case&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Example of what users do in order to mark a track as obscene. However, due to the track still eventually showing up to the on-air DJ, it is possible for them to both play this track and announce it on air as if “Obscene Do Not Play” is the track title.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/add_album_old.png&quot; alt=&quot;addAlbum&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;The most difficult issue we saw users encounter with adding an album was dealing with the record label input. A lot of the albums sent to WREK Atlanta are self-released and do not belong to a label.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/add_tracks_old.png&quot; alt=&quot;addTracks&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Programming an album for airplay can take a lot of time. Adding the track metadata individually just adds to the time. We felt that it was possible to make this process a little easier.&lt;/p&gt;
+
+&lt;p&gt;&lt;b&gt;Process&lt;/b&gt;&lt;/p&gt;
+
+&lt;p&gt;Features:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Tracks can be marked obscene&lt;/li&gt;
+  &lt;li&gt;Automation and online listener data is displayed in order to allow users to make more informed programming decisions&lt;/li&gt;
+  &lt;li&gt;Menu follows user&lt;/li&gt;
+  &lt;li&gt;FAQ Page for new users&lt;/li&gt;
+  &lt;li&gt;Clear feedback to user when an action is taken&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;The initial design worked off of a grid system and would display all album artwork for incoming albums instead of a list. However, we found that due to the nature of some of the albums sent to WREK Atlanta, finding the album artwork through existing databases impossible.
+&lt;img src=&quot;/images/Wireframe-PD.png&quot; alt=&quot;wireframe-pd&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;b&gt;Proposed Solution&lt;/b&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;u&gt;Home Page&lt;/u&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;b&gt;What we updated:&lt;/b&gt; Instead of seeing a list of albums to be programmed, the user sees real-time data related to the number of online listeners and automation usage. Hovering over each cell in the heatmap shows the user the number of online listeners and the show for a given hour.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/home_page_PD.png&quot; alt=&quot;home_page&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;u&gt;Add An Album&lt;/u&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;b&gt;What we updated:&lt;/b&gt; The biggest change for adding an album was changing the input type for the record label. Instead of creating and maintaining a list of record labels, the user inputs one into a text field and if that record label already exists, it will auto-fill. We also added a field for the user to add a Spotify URL if one exists. This feature would become available in a later version of the WREK online playlist.&lt;/p&gt;
+
+&lt;p&gt;&lt;u&gt;Add New Track&lt;/u&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;b&gt;What we updated:&lt;/b&gt; The biggest change for adding a new track was the addition of an explicit field. If a track is marked explicit, that particular track will be blocked out in red indicating to the on-air DJ not to play that track. In addition, a frequency field was added to each track for automation purposes.&lt;/p&gt;
+
+&lt;p&gt;&lt;u&gt;Feedback, Search, and Help&lt;/u&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;b&gt;What we updated:&lt;/b&gt; We added feedback for the user whenever an action was taken. We also included filtering search for programmed albums and incoming albums. We also included a simple FAQ page for new users.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/Feedback-PD.png&quot; alt=&quot;new_album&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/Help-PD.png&quot; alt=&quot;wireframe-pd&quot; /&gt;&lt;/p&gt;
+
+</description>
+        <pubDate>Wed, 09 Dec 2015 00:00:00 -0800</pubDate>
+        <link>http://sarastrouss.me/development/2015/12/09/programming/</link>
+        <guid isPermaLink="true">http://sarastrouss.me/development/2015/12/09/programming/</guid>
+      </item>
+    
+      <item>
+        <title>Music Animation</title>
+        <description>&lt;p&gt;For one of the projects in Construct of the Moving Image, we were given the task of creating a music animation in Processing. Instead of manually finding the beat of the song, I used Minim and Beat Detection libraries to accomplish this. Repo can be viewed &lt;a href=&quot;https://github.com/sarastrouss/musicanimation&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/music-ani.gif&quot; alt=&quot;animation&quot; /&gt;&lt;/p&gt;
+</description>
+        <pubDate>Mon, 12 Oct 2015 00:00:00 -0700</pubDate>
+        <link>http://sarastrouss.me/development/2015/10/12/music-animation/</link>
+        <guid isPermaLink="true">http://sarastrouss.me/development/2015/10/12/music-animation/</guid>
+      </item>
+    
+  </channel>
+</rss>
