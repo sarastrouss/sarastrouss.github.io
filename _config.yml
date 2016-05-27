@@ -3,7 +3,11 @@ title:       Sara Strouss
 email:       saramstrouss@gmail.com
 author:      Sara Strouss
 description: "UX Portfolio"
+<<<<<<< HEAD
 url:         "http://sarastrouss.me"
+=======
+url:         "http://sarastrouss.github.io"
+>>>>>>> gh-page
 date_format: "%b %-d, %Y"
 
 # Google services
@@ -100,7 +104,11 @@ markdown:     kramdown
 redcarpet:
   extensions: ['smart', 'tables', 'with_toc_data']
 permalink:    pretty
+<<<<<<< HEAD
 paginate:     4
+=======
+paginate:     3
+>>>>>>> gh-page
 sass:
   compressed: true
 gems:
