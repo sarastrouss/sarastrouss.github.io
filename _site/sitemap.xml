@@ -1,8 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
-<loc>http://sarastrouss.me/development/2015/12/09/oh-hi-there/</loc>
-<lastmod>2015-12-09T00:00:00-08:00</lastmod>
+<loc>http://sarastrouss.me/ux/design/2016/05/25/wrek-player/</loc>
+<lastmod>2016-05-25T00:00:00-07:00</lastmod>
+</url>
+<url>
+<loc>http://sarastrouss.me/ux/design/2016/05/20/app/</loc>
+<lastmod>2016-05-20T00:00:00-07:00</lastmod>
 </url>
 <url>
 <loc>http://sarastrouss.me/development/2015/12/09/programming/</loc>
