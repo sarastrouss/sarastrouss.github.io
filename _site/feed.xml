@@ -7,6 +7,15 @@
     <atom:link href="http://sarastrouss.me/feed.xml" rel="self" type="application/rss+xml" />
     
       <item>
+        <title>WREK Atlanta Player</title>
+        <description>
+</description>
+        <pubDate>Wed, 25 May 2016 00:00:00 -0700</pubDate>
+        <link>http://sarastrouss.me/development/2016/05/25/wrek-player/</link>
+        <guid isPermaLink="true">http://sarastrouss.me/development/2016/05/25/wrek-player/</guid>
+      </item>
+    
+      <item>
         <title>Programming Dashboard 2.0</title>
         <description>&lt;p&gt;&lt;b&gt;Problem&lt;/b&gt;: The current music director system at WREK Atlanta is not user friendly. After working with the system myself, and discussing some of the usability issues with other music directors, I decided to take on the project as my senior design project. I worked with two other people and I was responsible for the &lt;b&gt;front-end development&lt;/b&gt;. I used &lt;b&gt; Ruby on Rails&lt;/b&gt;, &lt;b&gt;d3.js&lt;/b&gt;, and &lt;b&gt;Bootstrap&lt;/b&gt;.&lt;/p&gt;
 

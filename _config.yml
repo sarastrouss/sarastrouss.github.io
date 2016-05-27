@@ -107,7 +107,7 @@ permalink:    pretty
 <<<<<<< HEAD
 paginate:     4
 =======
-paginate:     3
+paginate:     6
 >>>>>>> gh-page
 sass:
   compressed: true
