@@ -13,7 +13,7 @@
     <link rel="alternate" type="application/rss+xml" title="RSS Feed for Sara Strouss" href="/feed.xml" />
 
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="/css/pixyll.css?201605271426" type="text/css">
+    <link rel="stylesheet" href="/css/pixyll.css?201605271551" type="text/css">
 
     <!-- Fonts -->
     
@@ -138,7 +138,55 @@
 </div>
 
 <article class="post-content">
-  
+  <p><b>Problem</b>: Due to the inner workings of WREK Atlanta, www.wrek.org is self-hosted through the campus OIT. However, with WREK’s website dependent on the campus’s network and servers, there are often outages. Some of these outages can last for days. In order to provide listeners with a backup to listen online, we are currently working on creating a light wrek.org that will not be self-hosted.</p>
+
+<p>I am leading the feature design of the WREK player. Some key features that we have identified as absolutely necessary are:</p>
+
+<ul>
+  <li>Online playlist</li>
+  <li>Song metadata</li>
+  <li>Show info</li>
+  <li>Pop-out window</li>
+  <li>Contact info</li>
+  <li>Mobile friendly</li>
+</ul>
+
+<p><u>Current Implementation</u></p>
+
+<p>When the user presses the volume button on the player, it opens to a pop-out player. In addition, each link featured on the player takes the user to another page on wrek.org.</p>
+
+<p><img src="/images/player_old.png" alt="player" /></p>
+
+<p>The current pop-out player’s design is not consistent with the player design. It does reuse elements from the main page such as the request widget. Overall, the content of the pop-out player does fit the feature list that we want to complete, however it is not mobile friendly.</p>
+
+<p><img src="/images/Popout Player.png" alt="player_out" /></p>
+
+<p><b>Process</b></p>
+
+<p>To begin, I started by wireframing several different potential layouts for the player that would appear on wrek.org. I started off with a similar layout to the current one and moved from there.</p>
+
+<p><img src="/images/player.png" alt="player_out" /></p>
+
+<p>The final player design puts focus on the what is currently happening on air. The user can change the volume, bring up a short playlist that changes the content in the player widget, and pop out the player into another window.</p>
+
+<p><b>Main Proposed Changes</b></p>
+
+<ul>
+  <li>
+    <p>Player does not automatically pop out, but plays immediately after the user selects the play button.</p>
+  </li>
+  <li>
+    <p>User can change between on-air, HD-1, and HD-2 stations through the provided menu.</p>
+  </li>
+  <li>
+    <p>There is a reinforced show identity by highlighting the show’s icon on the web player.</p>
+  </li>
+  <li>
+    <p>Including the social media icons and contact at the bottom of the player frees up space on wrek.org.</p>
+  </li>
+</ul>
+
+<p><img src="/images/player-final.png" alt="player_out" /></p>
 
 </article>
 
