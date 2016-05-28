@@ -1,29 +1,24 @@
 ---
 layout:     post
-title:      WREK Atlanta Player
+title:      WREK: Live Player Redesign
 summary:    ___
 date:       2016-05-25
 categories: UX Design
 ---
 
-<b>Problem</b>: Due to the inner workings of WREK Atlanta, www.wrek.org is self-hosted through the campus OIT. However, with WREK’s website dependent on the campus’s network and servers, there are often outages. Some of these outages can last for days. In order to provide listeners with a backup to listen online, we are currently working on creating a light wrek.org that will not be self-hosted.
+<b>Problem</b>: WREK Atlanta's Wordpress site, ([WREK.org](https://wrek.org)), has come a long way from what it looked like [back in 2001](http://web.archive.org/web/20011127061215/http://www.wrek.org/). Even so, the most recent redesign took place in 2013, and the Live Player was an Adobe Flash widget with no phone-friendly fallback until 2015. I'm leading a redesign of the player to address listener feedback and improve the overall experience. Key elements of the new player: 
 
-I am leading the feature design of the WREK player. Some key features that we have identified as absolutely necessary are:
-
-- Online playlist
-- Song metadata
-- Show info
-- Pop-out window
-- Contact info
-- Mobile friendly
+- Easier access to show descriptions and playlist history
+- Mobile friendly while maintaining features such as live-updating "Now Playing" text
+- Optional, rather than mandatory pop-out player
 
 <u>Current Implementation</u>
 
-When the user presses the volume button on the player, it opens to a pop-out player. In addition, each link featured on the player takes the user to another page on wrek.org. 
+When the user presses the volume icon on the WREK homepage, a pop-up player window opens. In addition, each link featured on the player takes the user to another page on wrek.org. 
 
 ![player](/images/player_old.png)
 
-The current pop-out player's design is not consistent with the player design. It does reuse elements from the main page such as the request widget. Overall, the content of the pop-out player does fit the feature list that we want to complete, however it is not mobile friendly. 
+While the current player's design does reuse some elements from the homepage such as the Song Request widget, it still feels inconsistent across desktop and mobile, and there are a few strange CSS quirks on tablets. 
 
 ![player_out](/images/Popout Player.png)
 
