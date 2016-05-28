@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:      WREK: Live Player Redesign
+title:      WREK Player Redesign
 summary:    ___
 date:       2016-05-25
 categories: UX Design
