@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>WREK Atlanta Player &#8211; Sara Strouss</title>
+    <title>WREK Player Redesign &#8211; Sara Strouss</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="___">
     <meta name="robots" content="all">
@@ -13,7 +13,7 @@
     <link rel="alternate" type="application/rss+xml" title="RSS Feed for Sara Strouss" href="/feed.xml" />
 
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="/css/pixyll.css?201605271625" type="text/css">
+    <link rel="stylesheet" href="/css/pixyll.css?201606011223" type="text/css">
 
     <!-- Fonts -->
     
@@ -33,7 +33,7 @@
     <!-- From: https://github.com/mmistakes/hpstr-jekyll-theme/blob/master/_includes/head.html -->
     <meta property="og:locale" content="en_US">
     <meta property="og:type" content="article">
-    <meta property="og:title" content="WREK Atlanta Player">
+    <meta property="og:title" content="WREK Player Redesign">
     <meta property="og:description" content="UX Portfolio">
     <meta property="og:url" content="http://sarastrouss.me/ux/design/2016/05/25/wrek-player/">
     <meta property="og:site_name" content="Sara Strouss">
@@ -41,7 +41,7 @@
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary" />
     
-    <meta name="twitter:title" content="WREK Atlanta Player" />
+    <meta name="twitter:title" content="WREK Player Redesign" />
     <meta name="twitter:description" content="___" />
     <meta name="twitter:url" content="http://sarastrouss.me/ux/design/2016/05/25/wrek-player/" />
 
@@ -123,7 +123,7 @@
 
 
 <div class="post-header mb2">
-  <h1>WREK Atlanta Player</h1>
+  <h1>WREK Player Redesign</h1>
   <span class="post-meta">May 25, 2016</span><br>
   
   <span class="post-meta small">
@@ -134,26 +134,21 @@
 </div>
 
 <article class="post-content">
-  <p><b>Problem</b>: Due to the inner workings of WREK Atlanta, www.wrek.org is self-hosted through the campus OIT. However, with WREK’s website dependent on the campus’s network and servers, there are often outages. Some of these outages can last for days. In order to provide listeners with a backup to listen online, we are currently working on creating a light wrek.org that will not be self-hosted.</p>
-
-<p>I am leading the feature design of the WREK player. Some key features that we have identified as absolutely necessary are:</p>
+  <p><b>Problem</b>: WREK Atlanta’s Wordpress site, (<a href="https://wrek.org">WREK.org</a>), has come a long way from what it looked like <a href="http://web.archive.org/web/20011127061215/http://www.wrek.org/">back in 2001</a>. Even so, the most recent redesign took place in 2013, and the Live Player was an Adobe Flash widget with no phone-friendly fallback until 2015. I’m leading a redesign of the player to address listener feedback and improve the overall experience. Key elements of the new player:</p>
 
 <ul>
-  <li>Online playlist</li>
-  <li>Song metadata</li>
-  <li>Show info</li>
-  <li>Pop-out window</li>
-  <li>Contact info</li>
-  <li>Mobile friendly</li>
+  <li>Easier access to show descriptions and playlist history</li>
+  <li>Mobile friendly while maintaining features such as live-updating “Now Playing” text</li>
+  <li>Optional, rather than mandatory pop-out player</li>
 </ul>
 
 <p><u>Current Implementation</u></p>
 
-<p>When the user presses the volume button on the player, it opens to a pop-out player. In addition, each link featured on the player takes the user to another page on wrek.org.</p>
+<p>When the user presses the volume icon on the WREK homepage, a pop-up player window opens. In addition, each link featured on the player takes the user to another page on wrek.org.</p>
 
 <p><img src="/images/player_old.png" alt="player" /></p>
 
-<p>The current pop-out player’s design is not consistent with the player design. It does reuse elements from the main page such as the request widget. Overall, the content of the pop-out player does fit the feature list that we want to complete, however it is not mobile friendly.</p>
+<p>While the current player’s design does reuse some elements from the homepage such as the Song Request widget, it still feels inconsistent across desktop and mobile, and there are a few strange CSS quirks on tablets.</p>
 
 <p><img src="/images/Popout Player.png" alt="player_out" /></p>
 

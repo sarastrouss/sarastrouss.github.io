@@ -7,27 +7,33 @@
     <atom:link href="http://sarastrouss.me/feed.xml" rel="self" type="application/rss+xml" />
     
       <item>
-        <title>WREK Atlanta Player</title>
-        <description>&lt;p&gt;&lt;b&gt;Problem&lt;/b&gt;: Due to the inner workings of WREK Atlanta, www.wrek.org is self-hosted through the campus OIT. However, with WREK’s website dependent on the campus’s network and servers, there are often outages. Some of these outages can last for days. In order to provide listeners with a backup to listen online, we are currently working on creating a light wrek.org that will not be self-hosted.&lt;/p&gt;
+        <title>WREK Atlanta Ad</title>
+        <description>&lt;p&gt;As Publicity Director of WREK Atlanta, I worked on several different advertisement campaigns for WREK Atlanta’s annual benefit concert, speciality shows, community events, and general station ads. One of my favorite works from this time is a general station ad that was designed to work in both print and online. The bouquet of flowers was illustrated by Tyler Smith. I filled in the illustration and designed the ad using &lt;b&gt;Photoshop&lt;/b&gt;. This ad has been featured in print in &lt;a href=&quot;https://nique.net&quot;&gt;The Technique&lt;/a&gt; and &lt;a href=&quot;https://clatl.com&quot;&gt;Creative Loafing&lt;/a&gt;.&lt;/p&gt;
 
-&lt;p&gt;I am leading the feature design of the WREK player. Some key features that we have identified as absolutely necessary are:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/images/WREK_Color_Ad.jpg&quot; alt=&quot;wireframe-1&quot; /&gt;&lt;/p&gt;
+</description>
+        <pubDate>Wed, 01 Jun 2016 00:00:00 -0700</pubDate>
+        <link>http://sarastrouss.me/graphic/design/2016/06/01/ads/</link>
+        <guid isPermaLink="true">http://sarastrouss.me/graphic/design/2016/06/01/ads/</guid>
+      </item>
+    
+      <item>
+        <title>WREK Player Redesign</title>
+        <description>&lt;p&gt;&lt;b&gt;Problem&lt;/b&gt;: WREK Atlanta’s Wordpress site, (&lt;a href=&quot;https://wrek.org&quot;&gt;WREK.org&lt;/a&gt;), has come a long way from what it looked like &lt;a href=&quot;http://web.archive.org/web/20011127061215/http://www.wrek.org/&quot;&gt;back in 2001&lt;/a&gt;. Even so, the most recent redesign took place in 2013, and the Live Player was an Adobe Flash widget with no phone-friendly fallback until 2015. I’m leading a redesign of the player to address listener feedback and improve the overall experience. Key elements of the new player:&lt;/p&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;Online playlist&lt;/li&gt;
-  &lt;li&gt;Song metadata&lt;/li&gt;
-  &lt;li&gt;Show info&lt;/li&gt;
-  &lt;li&gt;Pop-out window&lt;/li&gt;
-  &lt;li&gt;Contact info&lt;/li&gt;
-  &lt;li&gt;Mobile friendly&lt;/li&gt;
+  &lt;li&gt;Easier access to show descriptions and playlist history&lt;/li&gt;
+  &lt;li&gt;Mobile friendly while maintaining features such as live-updating “Now Playing” text&lt;/li&gt;
+  &lt;li&gt;Optional, rather than mandatory pop-out player&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;p&gt;&lt;u&gt;Current Implementation&lt;/u&gt;&lt;/p&gt;
 
-&lt;p&gt;When the user presses the volume button on the player, it opens to a pop-out player. In addition, each link featured on the player takes the user to another page on wrek.org.&lt;/p&gt;
+&lt;p&gt;When the user presses the volume icon on the WREK homepage, a pop-up player window opens. In addition, each link featured on the player takes the user to another page on wrek.org.&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;/images/player_old.png&quot; alt=&quot;player&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;The current pop-out player’s design is not consistent with the player design. It does reuse elements from the main page such as the request widget. Overall, the content of the pop-out player does fit the feature list that we want to complete, however it is not mobile friendly.&lt;/p&gt;
+&lt;p&gt;While the current player’s design does reuse some elements from the homepage such as the Song Request widget, it still feels inconsistent across desktop and mobile, and there are a few strange CSS quirks on tablets.&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;/images/Popout Player.png&quot; alt=&quot;player_out&quot; /&gt;&lt;/p&gt;
 
@@ -64,7 +70,7 @@
       </item>
     
       <item>
-        <title>WREK Atlanta App</title>
+        <title>Exploring concepts for a native WREK app</title>
         <description>&lt;p&gt;&lt;b&gt;Problem&lt;/b&gt;: Taking information from recent survey data, we found that while the majority of our users listen to WREK on the radio, there is a decent number of listeners that access WREK online. Whether that be to listen to archived shows or listen live, we wanted to move towards providing a way for listeners to listen on their phones. In addition, we wanted to further cater to our listeners that live outside of our broadcast range.&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;/images/wrek-data.png&quot; alt=&quot;data&quot; /&gt;&lt;/p&gt;
